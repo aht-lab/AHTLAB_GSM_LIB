@@ -22,7 +22,7 @@
  - Gọi
    - Hàm gọi điện 1: Tính chính xác thời gian gọi
    ```c++
-	char phone[] = "0946866793";
+	char phone[] = "0941732379";
 	bool canCall = gsm->setupCall();
 	if(canCall)
 	{
@@ -41,7 +41,7 @@
    ```
    - Hàm gọi điện 2
    ```c++
-    gsm->call("0946866793");
+    gsm->call("0941732379");
 	unsigned  long now = millis();
 	unsigned  long TIMEOUT = 15000;
 	while(millis() - now < TIMEOUT)
@@ -61,7 +61,7 @@
     uint8_t numSMS = gsm->numSMS(SMS_STT_ALL);
 	gsm->readSMS(numSMS);
 	gsm->deleteAllSMS();
-    if(gsm->sendSMS("0946866793", "cafe5hsang@gmail.com - mita9497dev@gmail.com"))
+    if(gsm->sendSMS("0941732379", "cafe5hsang@gmail.com - mita9497dev@gmail.com"))
 	{
 		Serial.println("Gui SMS thanh cong");
 	}
