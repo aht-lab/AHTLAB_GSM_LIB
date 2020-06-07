@@ -61,7 +61,7 @@
     uint8_t numSMS = gsm->numSMS(SMS_STT_ALL);
 	gsm->readSMS(numSMS);
 	gsm->deleteAllSMS();
-    if(gsm->sendSMS("0941732379", "cafe5hsang@gmail.com - mita9497dev@gmail.com"))
+    if(gsm->sendSMS("0941732379", "www.ahtlab.com - info@ahtlab.com"))
 	{
 		Serial.println("Gui SMS thanh cong");
 	}
